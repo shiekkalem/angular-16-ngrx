@@ -1,0 +1,15 @@
+<div class="row">
+    <h1>Content Projection Example</h1>
+    <div class="col-md-12">
+        <div class="my-3">
+            <app-counter-output-projection [counterVal]="counterVal" ></app-counter-output-projection>
+        </div>
+        <div class="my-3">
+            <app-counter-buttons-projection  
+            (incrementEvent)="onIncrement()" 
+            (decrementEvent)="onDecrement()" 
+            (resetEvent)="onReset()"
+            ></app-counter-buttons-projection>
+        </div>
+    </div>
+</div>
